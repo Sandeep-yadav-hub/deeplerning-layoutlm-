@@ -1,0 +1,43 @@
+! rm -r unilm
+! git clone -b remove_torch_save https://github.com/NielsRogge/unilm.git
+
+! pip3 install torch
+! pip3 install ./unilm/layoutlm
+
+! pip3 install transformers
+
+ wget https://guillaumejaume.github.io/FUNSD/dataset.zip
+! unzip dataset.zip && mv dataset data && rm -rf dataset.zip __MACOSX
+
+
+import json
+
+with open('result.json') as f:
+  data = json.load(f)
+
+for annotation in data['annotations']:
+  print(annotation)
+
+# run this in terminal
+! python3 ./unilm/layoutlm/examples/seq_labeling/preprocess.py --data_dir data/training_data/annotations \
+                                                      --data_split train \
+                                                      --output_dir data \
+                                                      --max_len 510
+
+! python3 ./unilm/layoutlm/examples/seq_labeling/preprocess.py --data_dir data/testing_data/annotations \
+                                                      --data_split test \
+                                                      --output_dir data \
+                                                      --max_len 510
+
+! cat ./data/train.txt | cut -d$'\t' -f 2 | grep -v "^$"| sort | uniq > data/labels.txt
+
+
+# foo training (note:figure out a way to add training data and test data in data folder, coz as of now[12:03AM] i can see the training part takes the json file(each image has its indivdual json file) and images from test/training folder)
+RUN python3 .py 
+
+# for image procsesing change the image name for processing
+RUN python3 index.py 
+
+Note: You can try to make a flask app to open a image to annotate and save the json file and image im the smae format its given in the ./data folder
+Note: Chnage the DIR_NAME in layoutlm requirements.txt
+
