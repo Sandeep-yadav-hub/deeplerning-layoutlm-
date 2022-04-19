@@ -1,0 +1,210 @@
+{
+  "images": [
+    {
+      "width": 762,
+      "height": 1000,
+      "id": 0,
+      "file_name": "images/1/799531c5-output.png"
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "answer"
+    },
+    {
+      "id": 1,
+      "name": "question"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 0,
+      "image_id": 0,
+      "category_id": 1,
+      "segmentation": [],
+      "bbox": [
+        81,
+        271,
+        116,
+        21
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 2436
+    },
+    {
+      "id": 1,
+      "image_id": 0,
+      "category_id": 0,
+      "segmentation": [],
+      "bbox": [
+        210,
+        267,
+        250,
+        24
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 6000
+    },
+    {
+      "id": 2,
+      "image_id": 0,
+      "category_id": 1,
+      "segmentation": [],
+      "bbox": [
+        473,
+        267,
+        57,
+        18
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 1026
+    },
+    {
+      "id": 3,
+      "image_id": 0,
+      "category_id": 0,
+      "segmentation": [],
+      "bbox": [
+        535,
+        264,
+        75,
+        27
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 2025
+    },
+    {
+      "id": 4,
+      "image_id": 0,
+      "category_id": 1,
+      "segmentation": [],
+      "bbox": [
+        84,
+        317,
+        148,
+        15
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 2220
+    },
+    {
+      "id": 5,
+      "image_id": 0,
+      "category_id": 0,
+      "segmentation": [],
+      "bbox": [
+        236,
+        309,
+        170,
+        19
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 3230
+    },
+    {
+      "id": 6,
+      "image_id": 0,
+      "category_id": 1,
+      "segmentation": [],
+      "bbox": [
+        413,
+        306,
+        83,
+        27
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 2241
+    },
+    {
+      "id": 7,
+      "image_id": 0,
+      "category_id": 0,
+      "segmentation": [],
+      "bbox": [
+        504,
+        308,
+        83,
+        22
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 1826
+    },
+    {
+      "id": 8,
+      "image_id": 0,
+      "category_id": 1,
+      "segmentation": [],
+      "bbox": [
+        85,
+        355,
+        92,
+        21
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 1932
+    },
+    {
+      "id": 9,
+      "image_id": 0,
+      "category_id": 0,
+      "segmentation": [],
+      "bbox": [
+        182,
+        344,
+        443,
+        132
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 58476
+    },
+    {
+      "id": 10,
+      "image_id": 0,
+      "category_id": 1,
+      "segmentation": [],
+      "bbox": [
+        88,
+        482,
+        165,
+        34
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 5610
+    },
+    {
+      "id": 11,
+      "image_id": 0,
+      "category_id": 0,
+      "segmentation": [],
+      "bbox": [
+        258,
+        484,
+        361,
+        80
+      ],
+      "ignore": 0,
+      "iscrowd": 0,
+      "area": 28880
+    }
+  ],
+  "info": {
+    "year": 2022,
+    "version": "1.0",
+    "description": "",
+    "contributor": "Label Studio",
+    "url": "",
+    "date_created": "2022-04-18 12:53:28.203073"
+  }
+}

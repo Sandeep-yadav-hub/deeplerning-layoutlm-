@@ -1,0 +1,4 @@
+./layoulm/dataset/*
+./layoulm/layoutlm.pt
+./layoulm/layoutlm.pt.zip
+./layoulm/dataset/layoutlm.pt
